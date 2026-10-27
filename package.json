@@ -1,0 +1,14 @@
+{
+  "name": "finance-tracker",
+  "version": "1.0.0",
+  "description": "Institutional-grade, privacy-first personal finance tracker with multi-currency and forecasting",
+  "scripts": {
+    "dev": "concurrently -n \"SERVER,CLIENT\" -c \"cyan,magenta\" \"npm run server\" \"npm run client\"",
+    "server": "python server/run.py",
+    "client": "npm run dev --prefix client",
+    "build": "npm run build --prefix client"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}

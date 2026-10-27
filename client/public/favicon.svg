@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
+  <defs>
+    <linearGradient id="brassGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E5C178" />
+      <stop offset="50%" stop-color="#96681C" />
+      <stop offset="100%" stop-color="#D4AF37" />
+    </linearGradient>
+    <linearGradient id="leatherGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#25221C" />
+      <stop offset="100%" stop-color="#141210" />
+    </linearGradient>
+    <linearGradient id="parchmentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FCFAF5" />
+      <stop offset="100%" stop-color="#F3ECE0" />
+    </linearGradient>
+  </defs>
+
+  <!-- Outer Leather Book Binding -->
+  <rect x="6" y="6" width="116" height="116" rx="6" fill="url(#leatherGrad)" stroke="#161513" stroke-width="2" />
+  
+  <!-- Outer Gold Tooling Border -->
+  <rect x="12" y="12" width="104" height="104" rx="3" fill="none" stroke="url(#brassGrad)" stroke-width="1.5" />
+  <rect x="15" y="15" width="98" height="98" rx="2" fill="none" stroke="#3D372E" stroke-width="0.75" />
+
+  <!-- Parchment Leaf Inset -->
+  <rect x="22" y="18" width="88" height="92" rx="2" fill="url(#parchmentGrad)" stroke="#D7CEBE" stroke-width="1.5" />
+
+  <!-- Bound Leather Spine on Left -->
+  <rect x="12" y="12" width="16" height="104" rx="2" fill="#1C1A17" />
+  <line x1="28" y1="12" x2="28" y2="116" stroke="url(#brassGrad)" stroke-width="2" />
+  
+  <!-- Spine Brass Rivets -->
+  <circle cx="20" cy="28" r="2.5" fill="url(#brassGrad)" stroke="#161513" stroke-width="0.75" />
+  <circle cx="20" cy="64" r="2.5" fill="url(#brassGrad)" stroke="#161513" stroke-width="0.75" />
+  <circle cx="20" cy="100" r="2.5" fill="url(#brassGrad)" stroke="#161513" stroke-width="0.75" />
+
+  <!-- Ruled Accounting Ledger Lines -->
+  <line x1="34" y1="36" x2="104" y2="36" stroke="#D7CEBE" stroke-width="1" />
+  <line x1="34" y1="52" x2="104" y2="52" stroke="#D7CEBE" stroke-width="1" />
+  <line x1="34" y1="68" x2="104" y2="68" stroke="#D7CEBE" stroke-width="1" />
+  <line x1="34" y1="84" x2="104" y2="84" stroke="#D7CEBE" stroke-width="1" />
+  <line x1="34" y1="100" x2="104" y2="100" stroke="#D7CEBE" stroke-width="1" />
+
+  <!-- Vertical Ledger Ruled Margin (Accounting Red) -->
+  <line x1="48" y1="22" x2="48" y2="106" stroke="#9E2428" stroke-width="1.2" stroke-opacity="0.7" />
+  <line x1="88" y1="22" x2="88" y2="106" stroke="#1E4268" stroke-width="1" stroke-opacity="0.5" />
+
+  <!-- Brass Corner Reinforcements -->
+  <!-- Top-Right -->
+  <path d="M96 12 L116 12 L116 32 L110 32 L110 18 L96 18 Z" fill="url(#brassGrad)" stroke="#161513" stroke-width="0.75" />
+  <circle cx="110" cy="18" r="1.5" fill="#161513" />
+  <!-- Bottom-Right -->
+  <path d="M96 116 L116 116 L116 96 L110 96 L110 110 L96 110 Z" fill="url(#brassGrad)" stroke="#161513" stroke-width="0.75" />
+  <circle cx="110" cy="110" r="1.5" fill="#161513" />
+
+  <!-- Central Seal: Balance Scales of Equity & Steel Quill Nib -->
+  <g transform="translate(68, 60)">
+    <!-- Scale Beam -->
+    <line x1="-18" y1="-8" x2="18" y2="-8" stroke="#161513" stroke-width="2.5" stroke-linecap="round" />
+    <circle cx="0" cy="-8" r="3" fill="url(#brassGrad)" stroke="#161513" stroke-width="1" />
+    <line x1="0" y1="-8" x2="0" y2="18" stroke="#161513" stroke-width="2.5" stroke-linecap="round" />
+    <line x1="-10" y1="18" x2="10" y2="18" stroke="#161513" stroke-width="3" stroke-linecap="square" />
+    
+    <!-- Scale Left Pan -->
+    <line x1="-16" y1="-8" x2="-22" y2="4" stroke="#5C5549" stroke-width="1" />
+    <line x1="-16" y1="-8" x2="-10" y2="4" stroke="#5C5549" stroke-width="1" />
+    <path d="M-24 4 Q-16 11 -8 4 Z" fill="url(#brassGrad)" stroke="#161513" stroke-width="1" />
+    
+    <!-- Scale Right Pan -->
+    <line x1="16" y1="-8" x2="10" y2="4" stroke="#5C5549" stroke-width="1" />
+    <line x1="16" y1="-8" x2="22" y2="4" stroke="#5C5549" stroke-width="1" />
+    <path d="M8 4 Q16 11 24 4 Z" fill="url(#brassGrad)" stroke="#161513" stroke-width="1" />
+
+    <!-- Double Accounting Rule Below Seal -->
+    <line x1="-22" y1="23" x2="22" y2="23" stroke="#161513" stroke-width="1" />
+    <line x1="-22" y1="26" x2="22" y2="26" stroke="#161513" stroke-width="1" />
+  </g>
+</svg>
